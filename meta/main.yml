@@ -1,0 +1,17 @@
+---
+    galaxy_info:
+      min_ansible_version: 2.5
+      author: Patrick van Oostrom
+      description: RSync package
+      company: Media Butler
+      license: MIT
+      platforms:
+        - name: Ubuntu
+          versions:
+            - focal
+      galaxy_tags:
+        - rsync
+    dependencies:
+      - role: hyperized.package
+        package_name: rsync
+        package_state: "{{ rsync_state }}"

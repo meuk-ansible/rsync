@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  become: yes
+  roles:
+      - meuk.rsync
+  tasks:
+      - command: rsync -v
